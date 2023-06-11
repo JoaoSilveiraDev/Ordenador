@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+:root{
+    --cor-primaria: #ada776;
+    --cor-secundaria: #c2c29c;
+    --cor-terciaria: #090700;
+    --cor-quaternaria: #7c7772;
+    --cor-quinternaria: #f8f8f8;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.cabecalho{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+}
+.cabecalho__navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    gap: 30%;
+}
+.cabecalho__navegacao__botoes{
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-quaternaria);
+}
+.container__caixa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 30%;
+    height: 60%;
+    background-color: var(--cor-secundaria);
+    border-radius: 8px;
+}
+.container__caixa__botao{
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--cor-terciaria);
+    height: 30px;
+    width: 250px;
+    background-color: var(--cor-primaria);
+    border: 0.5px solid var(--cor-terciaria);
+    border-radius: 8px;
+}
+.container__caixa__selecao{
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+.container__caixa__opcao{
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--cor-terciaria);
+}
+.rodape{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+}
+.rodape__texto{
+    font-family: 'Fira Sans', sans-serif;
+}
+.container__caixa__botao:hover{
+    background-color: var(--cor-quaternaria);
+    transition: 0.7s;
+    color: var(--cor-quinternaria);
+}
+.cabecalho__navegacao__botoes:hover{
+    background-color: var(--cor-quaternaria);
+    transition: 0.7s;
+    color: var(--cor-quinternaria); 
+}
+@media  (max-width: 844px) {
+    .cabecalho__navegacao{
+        gap: 15%;
+    }
+    .container__caixa{
+        width: 70%;
+        height: 80%;
+    }
+}
